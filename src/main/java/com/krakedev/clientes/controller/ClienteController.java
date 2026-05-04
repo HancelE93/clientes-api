@@ -1,5 +1,8 @@
 package com.krakedev.clientes.controller;
 
+
+
+import org.springframework.web.bind.annotation.CrossOrigin; // 👈 IMPORTANTE
 import java.util.List;
 
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -15,7 +18,7 @@ import com.krakedev.clientes.entidades.Cliente;
 import com.krakedev.clientes.servicios.ServicioCliente;
 
 @RestController
-
+@CrossOrigin(origins = "*") // 👈 AQUÍ VA
 @RequestMapping("/clientes")
 public class ClienteController {
 
